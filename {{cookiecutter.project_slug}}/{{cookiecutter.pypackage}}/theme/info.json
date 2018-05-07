@@ -1,0 +1,11 @@
+{
+    "application": "udata",
+    "identifier": "{{ cookiecutter.identifier }}",
+    "name": "{{ cookiecutter.project_name }}",
+    "author": "{{ cookiecutter.author }}",
+    "description": "{{ cookiecutter.description }}",
+    "website": "{{ cookiecutter.website }}",
+    "license": "{{ cookiecutter.license }}",
+    "version": "{{ cookiecutter.version }}",
+    "doctype": "html5"
+}

@@ -1,0 +1,21 @@
+{
+    "project_name": "My Plugin",
+    "project_slug": "udata-{{ cookiecutter.project_name|replace(' ', '-')|lower }}",
+    "pypackage": "{{ cookiecutter.project_slug|replace('-', '_') }}",
+    "identifier": "{{ cookiecutter.project_slug|replace('udata-', '') }}",
+    "license": "AGPL",
+    "author": "Open Data Team",
+    "email": "contact@opendata.team",
+    "description": "My awesome uData plugin",
+    "version": "0.1.0.dev",
+    "website": "https://github.com/opendatateam/{{ cookiecutter.project_slug }}",
+    "has_harvester": ["yes", "no"],
+    "has_theme": ["yes", "no"],
+    "has_views": ["yes", "no"],
+    "has_metrics": ["yes", "no"],
+    "has_models": ["yes", "no"],
+    "has_linkchecker": ["yes", "no"],
+    "has_tasks": ["yes", "no"],
+    "has_preview": ["yes", "no"],
+    "has_generic_plugin": ["yes", "no"]
+}
