@@ -25,13 +25,6 @@ def md(filename):
     return content
 
 
-long_description = '\n'.join((
-    md('README.md'),
-    md('CHANGELOG.md'),
-    ''
-))
-
-
 def pip(filename):
     """Parse pip reqs file and transform it to setuptools requirements."""
     return open(os.path.join('requirements', filename)).readlines()
@@ -104,7 +97,7 @@ setup(
         ],
         {%- endif %}
         {% if cookiecutter.has_generic_plugin == 'yes' -%}
-        'udata.preview': [
+        'udata.plugins': [
             '{{cookiecutter.identifier}} = {{cookiecutter.pypackage}}',
         ],
         {%- endif %}
