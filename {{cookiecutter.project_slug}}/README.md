@@ -13,5 +13,5 @@ pip install {{ cookiecutter.project_slug }}
 Then activate it in your `udata.cfg`:
 
 ```python
-PLUGINS = ['{{ cookiecutter.project_slug }}']
+PLUGINS = ['{{cookiecutter.identifier}}']
 ```
