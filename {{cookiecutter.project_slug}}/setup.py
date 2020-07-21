@@ -48,6 +48,7 @@ setup(
     author='{{cookiecutter.author}}',
     author_email='{{cookiecutter.email}}',
     packages=find_packages(),
+    python_requires='>=3.7',
     include_package_data=True,
     install_requires=install_requires,
     tests_require=tests_require,
@@ -103,7 +104,7 @@ setup(
     },
     license='{{ cookiecutter.license }}',
     zip_safe=False,
-    keywords='udata, harvester, {{cookiecutter.project_name}}',
+    keywords='udata, {{cookiecutter.project_name}}',
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Programming Language :: Python',
@@ -112,8 +113,8 @@ setup(
         'Intended Audience :: Developers',
         'Topic :: System :: Software Distribution',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.7',
         'Topic :: Software Development :: Libraries :: Python Modules',
     ],
 )
