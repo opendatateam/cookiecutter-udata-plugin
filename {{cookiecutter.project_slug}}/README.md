@@ -4,7 +4,7 @@
 
 ## Usage
 
-Install the plugin package in you udata environement:
+Install the plugin package in you udata environment:
 
 ```bash
 pip install {{ cookiecutter.project_slug }}

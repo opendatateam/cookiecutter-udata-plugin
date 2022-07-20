@@ -5,9 +5,8 @@ commit = true
 tag = true
 tag_format = v{version}
 push = true
-clean = inv clean
-tests = inv test
-publish = inv dist
+tests = make test
+publish = make install
 files =
     README.md
 
